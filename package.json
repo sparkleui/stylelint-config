@@ -1,0 +1,32 @@
+{
+    "name": "@sparkleui/stylelint-config",
+    "version": "1.0.0",
+    "description": "A shareable Stylelint config used by Sparkle UI.",
+    "main": "index.js",
+    "keywords": [
+        "sparkleui",
+        "stylelint",
+        "stylelint-config",
+        "config",
+        "lint"
+    ],
+    "author": "Daniele De Luca",
+    "license": "MIT",
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/danieledeluca/stylelint-config.git"
+    },
+    "bugs": {
+        "url": "https://github.com/danieledeluca/stylelint-config/issues"
+    },
+    "files": [
+        "index.js"
+    ],
+    "dependencies": {
+        "stylelint-config-standard-scss": "^12.0.0",
+        "stylelint-order": "^6.0.4"
+    },
+    "peerDependencies": {
+        "stylelint": "^16.0.2"
+    }
+}
