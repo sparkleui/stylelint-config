@@ -1,4 +1,4 @@
-# stylelint-config-sparkleui
+# sparkleui-stylelint-confi
 
 [![npm version](https://img.shields.io/npm/v/@sparkleui/stylelint-config?logo=npm&logoColor=fff)](https://www.npmjs.com/package/@sparkleui/stylelint-config)
 
