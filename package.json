@@ -1,6 +1,6 @@
 {
   "name": "@sparkleui/stylelint-config",
-  "version": "1.0.0",
+  "version": "1.0.2",
   "description": "A shareable Stylelint config used by Sparkle UI.",
   "keywords": [
     "sparkleui",
