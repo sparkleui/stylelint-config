@@ -10,9 +10,7 @@ const validScss = readFileSync('./__tests__/valid.scss', 'utf-8');
 const invalidScss = readFileSync('./__tests__/invalid.scss', 'utf-8');
 
 describe('flags no warnings with valid scss', () => {
-	/**
-	 * @type {import('stylelint').LinterResult}
-	 */
+	/** @type {import('stylelint').LinterResult} */
 	let result;
 
 	beforeEach(async () => {
@@ -32,9 +30,7 @@ describe('flags no warnings with valid scss', () => {
 });
 
 describe('flags warnings with invalid scss', () => {
-	/**
-	 * @type {import('stylelint').LinterResult}
-	 */
+	/** @type {import('stylelint').LinterResult} */
 	let result;
 
 	beforeEach(async () => {
