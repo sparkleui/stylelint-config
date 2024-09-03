@@ -25,7 +25,7 @@ module.exports = {
             2,
             {
                 ignore: ['pseudo-classes'],
-                ignoreAtRules: ['include', 'media', 'support', 'each', 'if'],
+				ignoreAtRules: ['include', 'media', 'supports', 'each', 'if'],
                 ignoreRules: ['/^&\\S+/'],
             },
         ],
