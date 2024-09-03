@@ -16,7 +16,7 @@ Set your Stylelint config to:
 
 ```json
 {
-    "extends": "@sparkleui/stylelint-config"
+  "extends": "@sparkleui/stylelint-config"
 }
 ```
 
