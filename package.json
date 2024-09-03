@@ -26,6 +26,7 @@
     "dev": "node --test --watch",
     "format": "prettier . --write --ignore-path=.prettierignore",
     "lint": "eslint . --ignore-path .gitignore",
+    "release": "np",
     "test": "node --test"
   },
   "dependencies": {
@@ -36,6 +37,7 @@
     "@stylelint/prettier-config": "^3.0.0",
     "eslint": "^8.57.0",
     "eslint-config-stylelint": "^22.0.0",
+    "np": "^10.0.7",
     "prettier": "^3.3.3",
     "stylelint": "^16.9.0"
   },
