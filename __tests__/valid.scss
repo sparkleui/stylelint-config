@@ -1,0 +1,216 @@
+// at-rule-disallowed-list
+@import 'at-rule-disallowed-list';
+
+// color-function-notation
+$color-function-notation: rgba(255, 255, 255, 20%) !default;
+$color-function-notation-with-var: rgba(var(--color, 255, 255, 255), 20%) !default;
+
+// color-hex-length
+$color-hex-length: #ffffff !default;
+
+// color-named
+$color-named: map-get($color, white) !default;
+
+// declaration-property-value-disallowed-list
+.declaration-property-value-disallowed-list {
+    border: 0;
+    border-top: 0;
+    border-right: 0;
+    border-bottom: 0;
+    border-left: 0;
+}
+
+// max-nesting-depth
+@mixin max-nesting-depth {
+    color: #ffffff;
+}
+
+.max-nesting-depth {
+    .max-nesting-depth {
+        .max-nesting-depth {
+            $colors: #ff0000, #0000ff, #008000;
+
+            @include max-nesting-depth;
+
+            color: #ffffff;
+            
+            &:hover {
+                color: #ffffff;
+            }
+
+            @media screen {
+                color: #ffffff;
+            }
+
+            @supports (display: grid) {
+                color: #ffffff;
+            }
+
+            @each $color in $colors {
+                color: $color;
+            }
+
+            @if true {
+                color: #ffffff;
+            }
+
+            &.max-nesting-depth {
+                color: #ffffff;
+            }
+        }
+    }
+}
+
+// no-descending-specificity
+// null
+
+// number-max-precision
+// null
+
+// order/order
+%order {
+    color: #ffffff;
+}
+
+@mixin order {
+    @content;
+}
+
+.order {
+    --custom-variable: #ffffff;
+
+    $dollar-variable: #ffffff;
+
+    @extend %order;
+    @include max-nesting-depth;
+
+    color: #ffffff;
+
+    @include order {
+        color: #ffffff;
+    }
+
+    &:hover {
+        color: #ffffff;
+    }
+
+    &::after {
+        color: #ffffff;
+    }
+
+    &.order {
+        color: #ffffff;
+    }
+}
+
+// scss/at-each-key-value-single-line
+$colors: (
+    red: #ff0000,
+    blue: #0000ff,
+    green: #008000,
+) !default;
+
+@each $key, $value in $colors {
+    .color-#{$key} {
+        color: $value;
+    }
+}
+
+// scss/dimension-no-non-numeric-values
+$dimension: 4 !default;
+
+.dimension-no-non-numeric-values {
+    font-size: $dimension * 1px;
+}
+
+// scss/dollar-variable-colon-space-after
+$dollar-variable-colon-space-after: #ffffff !default;
+
+// scss/dollar-variable-default
+$dollar-variable-default: #ffffff !default;
+
+.dollar-variable-default {
+    $dollar-variable-default: #ffffff;
+}
+
+// scss/dollar-variable-empty-line-after
+$dollar-variable-empty-line-after: #ffffff !default;
+
+// comment
+$dollar-variable-empty-line-after-before-comment: #ffffff !default;
+$dollar-variable-empty-line-after-before-dollar-variable: #ffffff !default;
+
+.dollar-variable-empty-line-after {
+    color: #ffffff;
+
+    &:hover {
+        $dollar-variable-empty-line-after-last-nested: #ffffff !default;
+    }
+}
+
+// scss/dollar-variable-empty-line-before
+// null
+
+// scss/no-duplicate-dollar-variables
+$no-duplicate-dollar-variables-a: #ffffff !default;
+$no-duplicate-dollar-variables-b: #ffffff !default;
+
+@if true {
+    $no-duplicate-dollar-variables-a: #ffffff;
+} @else {
+    $no-duplicate-dollar-variables-b: #ffffff;
+}
+
+@mixin no-duplicate-dollar-variables {
+    $no-duplicate-dollar-variables-a: #ffffff;
+}
+
+@function no-duplicate-dollar-variables {
+    $no-duplicate-dollar-variables-b: #ffffff;
+
+    @return $no-duplicate-dollar-variables-b;
+}
+
+// scss/no-global-function-names
+// null
+
+// scss/operator-no-newline-after
+// null
+
+// scss/selector-no-redundant-nesting-selector
+.selector-no-redundant-nesting-selector {
+    .selector-no-redundant-nesting-selector {
+        color: #ffffff;
+    }
+}
+
+// scss/selector-no-union-class-name
+.selector-no-union-class-name-selector-no-union-class-name {
+        color: #ffffff;
+}
+
+// selector-class-pattern
+// null
+
+// selector-max-compound-selectors
+.selector-max-compound-selectors + .selector-max-compound-selectors {
+    color: #ffffff;
+}
+
+.selector-max-compound-selectors + .selector-max-compound-selectors + .selector-max-compound-selectors {
+    color: #ffffff;
+}
+
+// selector-max-id
+[id='selector-max-id'] {
+    color: #ffffff;
+}
+
+// selector-no-qualifying-type
+div.selector-no-qualifying-type {
+    color: #ffffff;
+}
+
+.selector-no-qualifying-type[name='selector-no-qualifying-type'] {
+    color: #ffffff;
+}

@@ -1,0 +1,107 @@
+// at-rule-disallowed-list
+@debug 'at-rule-disallowed-list';
+
+// color-function-notation
+$color-function-notation: rgba(255 255 255, 20%) !default;
+
+// color-hex-length
+$color-hex-length: #fff !default;
+
+// color-named
+$color-named: white !default;
+
+// declaration-property-value-disallowed-list
+.declaration-property-value-disallowed-list {
+    border: none;
+}
+
+// max-nesting-depth & selector-max-compound-selectors
+.max-nesting-depth {
+    .max-nesting-depth {
+        .max-nesting-depth {
+            .selector-max-compound-selectors {
+                color: #ffffff;
+            }
+        }
+    }
+}
+
+// no-descending-specificity
+// null
+
+// number-max-precision
+// null
+
+// order/order
+.order {
+    color: #ffffff;
+
+    $dollar-variable: #ffffff;
+}
+
+// scss/at-each-key-value-single-line
+$colors: (
+    red: #ff0000,
+    blue: #0000ff,
+    green: #008000,
+) !default;
+
+@each $key in map-keys($colors) {
+  $value: map-get($colors, $key);
+}
+
+// scss/dimension-no-non-numeric-values
+$dimension: 4 !default;
+
+.dimension-no-non-numeric-values {
+    font-size: #{$dimension}px;
+}
+
+// scss/dollar-variable-colon-space-after
+$dollar-variable-colon-space-after:#ffffff !default;
+
+// scss/dollar-variable-default
+$dollar-variable-default: #ffffff;
+
+// scss/dollar-variable-empty-line-after
+$dollar-variable-empty-line-after: #ffffff !default;
+.dollar-variable-empty-line-after {
+    color: #ffffff;
+}
+
+// scss/dollar-variable-empty-line-before
+// null
+
+// scss/no-duplicate-dollar-variables
+.no-duplicate-dollar-variables {
+    $no-duplicate-dollar-variables: #ffffff;
+    $no-duplicate-dollar-variables: #ffffff;
+}
+
+// scss/no-global-function-names
+// null
+
+// scss/operator-no-newline-after
+// null
+
+// scss/selector-no-redundant-nesting-selector
+.selector-no-redundant-nesting-selector {
+    & .selector-no-redundant-nesting-selector {
+        color: #ffffff;
+    }
+}
+
+// scss/selector-no-union-class-name
+.selector-no-union-class-name {
+    &-selector-no-union-class-name {
+        color: #ffffff;
+    }
+}
+
+// selector-class-pattern
+// null
+
+// selector-max-id & selector-no-qualifying-type
+selector-max-id#selector-no-qualifying-type {
+    color: #ffffff;
+}
