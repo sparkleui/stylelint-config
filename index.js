@@ -6,6 +6,12 @@ module.exports = {
     plugins: ['stylelint-order'],
     rules: {
         'at-rule-disallowed-list': ['debug'],
+'color-function-notation': [
+			'legacy',
+			{
+				ignore: ['with-var-inside'],
+			},
+		],
         'color-hex-length': 'long',
         'color-named': ['never', { ignore: ['inside-function'] }],
         'declaration-property-value-disallowed-list': {
