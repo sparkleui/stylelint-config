@@ -26,7 +26,7 @@
     "dev": "node --test --watch",
     "format": "prettier . --write",
     "lint": "eslint . --fix",
-    "release": "np",
+    "release": "np --message='release: v%s'",
     "test": "node --test"
   },
   "prettier": "@stylelint/prettier-config",
