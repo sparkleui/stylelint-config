@@ -29,6 +29,7 @@
     "release": "np",
     "test": "node --test"
   },
+  "prettier": "@stylelint/prettier-config",
   "dependencies": {
     "stylelint-config-standard-scss": "^12.0.0",
     "stylelint-order": "^6.0.4"
